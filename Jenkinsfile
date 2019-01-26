@@ -13,7 +13,6 @@ pipeline {
             }
         }
         stage('Build Image') {
-            agent any
             steps {
                 script {
                 	app = docker.build("vinsdocker/demotest")
